@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-TARGET = crouton
+TARGET = crackers
 EXTTARGET = crouton.zip
 LIBS = src/freon.c
 LIBSTARGETS = $(patsubst src/%.c, crouton%.so, $(LIBS))
