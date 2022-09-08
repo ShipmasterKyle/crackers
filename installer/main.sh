@@ -32,8 +32,8 @@ PROXY='unspecified'
 RELEASE=''
 RESTORE=''
 RESTOREBIN=''
-DEFAULTRELEASE='xenial'
-PREVIOUS_DEFAULT_RELEASES='precise'
+DEFAULTRELEASE='focal'
+PREVIOUS_DEFAULT_RELEASES='xenial'
 TARBALL=''
 TARGETS=''
 TARGETFILE=''
@@ -171,7 +171,7 @@ if [ "$RELEASE" = 'list' -o "$RELEASE" = 'help' ]; then
         fi
     done
     echo 'Releases marked with ! are upstream end-of-life, and should be avoided.' 1>&2
-    echo 'Releases marked with * are unsupported, but may work with some effort.' 1>&2
+    echo 'Releases marked with * are unsupported, but will probably work.' 1>&2
     exit 2
 fi
 
